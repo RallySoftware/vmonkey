@@ -9,3 +9,9 @@ RSpec::Core::RakeTask.new('run_vm_specs') do |t|
   tests = ['spec/virtualmachine_spec*']
   t.pattern = tests
 end
+
+desc "run only virtual machine helper specs"
+RSpec::Core::RakeTask.new('run_vm_helper_specs') do |t|
+  tests = ['spec/vm_helper_spec*']
+  t.pattern = tests
+end

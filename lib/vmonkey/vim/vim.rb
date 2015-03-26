@@ -90,6 +90,14 @@ module RbVmomi
       nil
     end
 
+    def monkey_helper
+      VMonkey::Helpers::VM.new(self)
+    end
+
+    def get_all_vms
+      monkey_helper.get_all_vms
+    end
+
     private
 
     def self.read_yml_opts

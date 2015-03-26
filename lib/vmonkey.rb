@@ -1,6 +1,7 @@
 require 'rbvmomi'
 require_relative 'vmonkey/version'
 require_relative 'vmonkey/vim/vim'
+require_relative 'vmonkey/helpers/vm_helper'
 
 monkey_vim = File.join(File.dirname(__FILE__), 'vmonkey', 'vim')
 RbVmomi::VIM.add_extension_dir monkey_vim
